@@ -13,8 +13,17 @@ for file in files:
     image = Image.open(file)
     exifdata = image.getexif()
 
-    for tagid in exifdata:
-        tagname = TAGS.get(tagid, tagid)
-        value = exifdata.get(tagid)
+    #for tagid in exifdata:
+    #    tagname = TAGS.get(tagid, tagid)
+    #    value = exifdata.get(tagid)
 
-        print(f"{tagname:25}: {value}")
+    #    if "Date" in tagname:
+    #        print(tagid)
+    #        print(value)
+
+    date = exifdata.get(306)
+
+    date = date[:10]
+
+    print("-----", file, "-----")
+    print("Date: ", date)
