@@ -12,7 +12,7 @@ To install it, just download `ImageSorter.py`.
 You can download it manualy, or clone the repo:
 
 ``` bash
-    git clone https://github.com/V0Iek/SortImages.git
+git clone https://github.com/V0Iek/SortImages.git
 ```
 
 ## Usage
@@ -20,5 +20,5 @@ You can download it manualy, or clone the repo:
 To use it move `ImageSorter.py` to folder with your images and execute it:
 
 ``` bash
-    python ImageSorter.py
+python ImageSorter.py
 ```
