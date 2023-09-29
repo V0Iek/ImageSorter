@@ -19,6 +19,7 @@ for file in files:
     # Get data from metadata
     date = exifdata.get(306)
     date = date[:10]
+    date = date[8:] + "." + date[5:7] + "." + date[:4]
 
     # Create dir with date if not exist
     if not os.path.isdir(date):
